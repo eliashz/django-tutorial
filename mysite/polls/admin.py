@@ -1,3 +1,17 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Choice, Question
+
+
+class ChoiceAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(Choice, ChoiceAdmin)
+
+
+class QuestionAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(Question, QuestionAdmin)
